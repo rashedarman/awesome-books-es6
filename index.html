@@ -8,6 +8,93 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <h3>Awesome Books</h3>
+          <ul id="nav-ul">
+            <li>
+              <a href="#">List</a>
+            </li>
+            <li>
+              <a href="#">Add new</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <h4 class="date-heading">March 19th, 2021, 9:25:32 am</h4>
+      </div>
+    </header>
+
+    <section id="list-section" class="d-none">
+      <div class="container">
+        <h2 class="text-center my-3">All awesome books</h2>
+        <ul id="book-list">
+          <li>
+            <p>"Title" by Author</p>
+            <button>Remove</button>
+          </li>
+          <li>
+            <p>"Title" by Author</p>
+            <button>Remove</button>
+          </li>
+          <li>
+            <p>"Title" by Author</p>
+            <button>Remove</button>
+          </li>
+          <li>
+            <p>"Title" by Author</p>
+            <button>Remove</button>
+          </li>
+          <li>
+            <p>"Title" by Author</p>
+            <button>Remove</button>
+          </li>
+          <li>
+            <p>"Title" by Author</p>
+            <button>Remove</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="add-section" class="d-none1">
+      <div class="container">
+        <h2 class="text-center my-3">Add a new book</h2>
+
+        <form action="" id="add-book">
+          <input type="text" name="title" required />
+          <input type="text" name="author" required />
+          <button>Add</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact-section" class="d-none">
+      <div class="container">
+        <h2 class="text-center my-3">Contact information</h2>
+        <div id="contact-info">
+          <p class="my-3">
+            Do have any questions or you, just want to say "Hello"? You can
+            reach out to us!
+          </p>
+          <ul>
+            <li>Our e-mail: mail@mail.com</li>
+            <li>Our phone number: 00435486534422</li>
+            <li>Our address: Streetname 22, 84503 City, Country</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-container">
+        <p class="footer-text">&copy; Awesome Books 2022</p>
+      </div>
+    </footer>
+
     <script src="./index.js" type="module"></script>
   </body>
 </html>
