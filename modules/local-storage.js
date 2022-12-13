@@ -1,6 +1,6 @@
 export default class LocalStorage {
   static loadBooks() {
-    let books = localStorage.getItem('books');
+    const books = localStorage.getItem('books');
     if (!books) return [];
     return JSON.parse(books);
   }

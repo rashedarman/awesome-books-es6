@@ -16,7 +16,7 @@ const hideOtherSections = (currentSection) => {
   currentSection.classList.remove('d-none');
 
   // hides sections that are not currently being viewed
-  const hideSections = sections.filter((section) => section != currentSection);
+  const hideSections = sections.filter((section) => section !== currentSection);
   hideSections.forEach((section) => section.classList.add('d-none'));
 };
 
