@@ -49,6 +49,21 @@ footer {
   justify-content: space-between;
 }
 
+.btn-primary {
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 0;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 1);
+  transition: box-shadow 0.1s;
+  font-weight: 500;
+  padding: 0 0.5rem;
+}
+
+.btn-primary:hover {
+  box-shadow: none;
+}
+
 #nav-ul {
   list-style: none;
   padding: 0;
@@ -95,14 +110,20 @@ footer {
 
 #add-book {
   width: fit-content;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin: 4rem auto;
 }
 
 #add-book > * {
   margin-bottom: 1rem;
+}
+
+#add-book input {
+  border: 2px solid #333;
+  padding: 0.25rem 0.5rem;
+  outline: none;
 }
 
 #contact-section {
