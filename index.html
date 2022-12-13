@@ -14,49 +14,30 @@
           <h3>Awesome Books</h3>
           <ul id="nav-ul">
             <li>
-              <a href="#">List</a>
+              <a class="nav-link" data-section="books-section" href="#"
+                >Books</a
+              >
             </li>
             <li>
-              <a href="#">Add new</a>
+              <a class="nav-link" data-section="add-section" href="#"
+                >Add new</a
+              >
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a class="nav-link" data-section="contact-section" href="#"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
-        <h4 class="date-heading">March 19th, 2021, 9:25:32 am</h4>
+        <h4 id="datetime"></h4>
       </div>
     </header>
 
-    <section id="list-section" class="d-none">
+    <section id="books-section">
       <div class="container">
         <h2 class="text-center my-3">All awesome books</h2>
-        <ul id="book-list">
-          <li>
-            <p>"Title" by Author</p>
-            <button class="btn-primary">Remove</button>
-          </li>
-          <li>
-            <p>"Title" by Author</p>
-            <button class="btn-primary">Remove</button>
-          </li>
-          <li>
-            <p>"Title" by Author</p>
-            <button class="btn-primary">Remove</button>
-          </li>
-          <li>
-            <p>"Title" by Author</p>
-            <button class="btn-primary">Remove</button>
-          </li>
-          <li>
-            <p>"Title" by Author</p>
-            <button class="btn-primary">Remove</button>
-          </li>
-          <li>
-            <p>"Title" by Author</p>
-            <button class="btn-primary">Remove</button>
-          </li>
-        </ul>
+        <ul id="book-list"></ul>
       </div>
     </section>
 
@@ -67,7 +48,7 @@
         <form action="" id="add-book">
           <input type="text" name="title" placeholder="Title" required />
           <input type="text" name="author" placeholder="Author" required />
-          <button class="btn-primary">Add</button>
+          <button type="submit" class="btn-primary">Add</button>
         </form>
       </div>
     </section>
