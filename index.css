@@ -46,7 +46,7 @@ footer {
   background-color: #fff;
   border: 2px solid #333;
   border-radius: 0;
-  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 1);
   transition: box-shadow 0.1s;
   font-weight: 500;
   padding: 0 0.5rem;
@@ -54,6 +54,18 @@ footer {
 
 .btn-primary:hover {
   box-shadow: none;
+}
+
+#book-list {
+  list-style: none;
+  padding: 0;
+  border: 2px solid #333;
+}
+
+#book-list > li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0.75rem;
 }
 
 #nav-ul {
@@ -82,18 +94,6 @@ footer {
 #datetime {
   text-align: right;
   font-weight: 500;
-}
-
-#book-list {
-  list-style: none;
-  padding: 0;
-  border: 2px solid #333;
-}
-
-#book-list > li {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.25rem 0.75rem;
 }
 
 #book-list > li:nth-child(odd) {
