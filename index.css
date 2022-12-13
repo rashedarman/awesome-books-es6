@@ -1,5 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* General styling */
 
 body {
   font-family: 'Poppins', sans-serif;
+}
+
+/* Utilities */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.d-none {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.my-3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Component styles */
+
+header,
+footer {
+  margin: 1.25rem;
+}
+
+.header-container {
+  padding: 0.75rem 2.5rem;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 0;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 1);
+  transition: box-shadow 0.1s;
+  font-weight: 500;
+  padding: 0 0.5rem;
+}
+
+.btn-primary:hover {
+  box-shadow: none;
+}
+
+#book-list {
+  list-style: none;
+  padding: 0;
+  border: 2px solid #333;
+}
+
+#book-list > li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0.75rem;
+}
+
+#nav-ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+#nav-ul > li {
+  padding: 0 0.5rem;
+}
+
+#nav-ul > li:not(:last-child) {
+  border-right: 1.5px solid #333;
+}
+
+#nav-ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#nav-ul a:hover {
+  color: #023e8a;
+}
+
+#datetime {
+  text-align: right;
+  font-weight: 500;
+}
+
+#book-list > li:nth-child(odd) {
+  background-color: #ccc;
+}
+
+#add-book {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 5rem auto;
+}
+
+#add-book > * {
+  margin-bottom: 1rem;
+}
+
+#add-book input {
+  border: 2px solid #333;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+}
+
+#contact-section {
+  margin: 5rem 0;
+}
+
+#contact-info {
+  width: fit-content;
+  margin: auto;
+}
+
+.footer-container {
+  padding: 0.5rem;
+  border: 2px solid #333;
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-weight: 500;
 }
